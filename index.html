@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="src/style.css">
     <title>Weather App</title>
 </head>
-<div class="weather-app">
 <body>
+    <div class="weather-app">
     <header>
         <form class="search-form">
             <input type="search" placeholder="Enter a city..." required class="search-form-input">
@@ -23,18 +23,20 @@
         </form>
     </header>
     <main>
+        <div class="weather-app-data">
         <div>
-        <h1>Paris</h1>
-        <p>
+        <h1 class="weather-app-city">Paris</h1>
+        <p class="weather-app-details">
             Monday 10:19, Overcast clouds
             <br>
-            H:84%, W:2.23km/h
+            H: <strong>84%</strong>, W: <strong>2.23km/h</strong>
         </p>
         </div>
-        <div>
-            ☀️15°C
+        <div class="weather-app-temperature-container">
+        <div class="weather-app-icon">☀️</div>
+        <div class="weather-app-temperature">15</div>
+        <div class="weather-app-unit">°C</div>
         </div>
-        
     </main>
     <footer>
         This project was coded by <a href="https://github.com/Nenyasha02" target="_blank">Nenyasha Muza</a>, 
